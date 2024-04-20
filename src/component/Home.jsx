@@ -30,10 +30,15 @@ export default function Home() {
       return <Loder />;
     } else if (state.error !== null) {
       return (
-        <div className="error">
-          <h1> ID IS NOT FOUND </h1>
-          <h1> 404 ERROR </h1>
-        </div>
+        
+        <div class="error-message">
+  <p>ID is not found</p>
+  <p>Please <a href="#">try again</a> later.</p>
+</div>
+        // <div className="error-message">
+        //   <h1> ID IS NOT FOUND </h1>
+        //   <h1> 404 ERROR </h1>
+        // </div>
       );
     } else {
       return (
